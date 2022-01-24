@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    background-color: grey;
+    font-size: 20px;
+    line-height: 1,2em;
+    color: white
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    margin-top: 10px;
+    overflow: hidden;
+    font-family: sans-serif;
+    
+}
+
+.forsidu_mynd{
+    float: left;
+    border-radius: 30px;
+    border: 5px solid white;
+    margin-right: 30px;
+    margin-left:30px;
+    width:30%;
+    box-sizing: border-box;
+}
+
+#Header-main{
+    color: white;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: left;
+    background-color: darkorange;
+}
+
+#NAVI{
+    background-color: gray;    
+    font-weight:bold;
+    color:white;
+    text-align: right;
+    border-bottom: 7px solid darkorange;
+    border-top: 4px solid darkorange;
+    border-right: 20px solid darkorange;
+   
+}
+
+#NAVI ul{
+    padidng:0;
+    list-style: none;
+}
+
+#NAVI li{
+    display:inline;
+    padding-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color:coral;
+}
+
+a:visited{
+    color:white;
+}
+
+a:visited:hover{
+    color:coral;
+}
+
+.Listi{
+    margin-top: 10px;
+    float:left;
+    width:30%;
+    box-sizing: border-box;
+}
+
+.Listi li{
+    float:left;
+    border-left: 10px;
+    padding: 10px;
+    border-top:20px;
+    color: white;
+    list-style-position: inside;
+}
+
+.footerS{
+    color: white;
+    padding: 10px;
+    text-align: left;
+    margin-top: 50px;
+    background-color: gainsboro;
+    text-align: center
+}
+
