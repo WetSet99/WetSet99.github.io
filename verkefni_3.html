@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Verkefni 3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+
+            <!-- Logo -->
+            <h1>Verkefni 3 - VÉL608G</h1>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Heim</a></li>
+                    <li><a href="#">Verkefni</a>
+                        <ul>
+                            <li><a href="verkefni_1.html">Verkefni 1 - Stofnun heimasíðu</a></li>
+                            <li><a href="verkefni_2.html">Verkefni 2 - Tölvustuddur skurður</a></li>
+                            <li><a href="verkefni_3.html">Verkefni 3 - 3D prentun og 3D skönnun</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="um_mig.html">Um mig</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <!-- Content -->
+                <article class="box post">
+                    <article class="skiptingar">
+                        <h3>3D prentun og 3D skönnun</h3>
+                        <p>
+                        Markmið verkefnis 3 er að hanna og prenta módel sem hentar í 3D prentun. Hönnunin má ekki vera framleiðanleg með frádráttar framleiðslu. Einnig á að 3D skanna hlut að okkar vali.
+                        </p>
+
+                    </article>
+                    
+                    <article class="skiptingar">
+                        <h4>3D prentun</h4>
+                        <p>
+                            Til að byrja með þarf að skilgreina kröfur verkefnisins betur. Þegar talað er um er við hluti sem unnir eru með frádráttar framleiðslu er átt við hluti sem er hægt að "draga" efni af til þess að framleiða hlutinn. Dæmi um frádráttar framleiðslu er meðal annars geislaskurður og einnig má finna verkefni unnið með þessari aðferð á síðunni undir verkefni 2. Góð leið til að uppfylla þessa kröfu er að hanna hlut sem eru holur að innan, þar sem að frádráttar aðferðin getur ekki búið til gat í hlutnum án þess að skera í gegnum hlutinn. Þar af leiðandi datt mér í hug að hanna mína útgáfu af <a href="https://www.youtube.com/watch?v=jJL0XoNBaac" target="_blank">Teketil leigumorðingjans </a> sem ég sá á YouTube í byrjun árs.
+                        </p>
+                        <h5>Hönnun</h5>
+                        <p>Ég ákvað að teikna upp teketilinn upp í Fusion 360 þar sem ég hef ágætann grunn í Inventor. Ég byrjaði á að hanna grunninn á þversniðinu fyrir ketilinn, út frá myndbandinu. En fyrst langaði mig að athuga hvernig ég færi að því að hanna skelina fyrir yfirborð ketilsins. Mér datt í hug að búa örlítið þversnið af hlutnum, extrude-a það 1mm út, og síðan snúa því í 360 gráður. Eins og sést hér fyrir neðan gekk það mjög vel. Þessa aðferð notaði til þess að hanna þversnið.</p>
+
+                    </article>
+
+                    <article class="skiptingar">
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/%C3%9Eversnid.PNG" alt="Hönnun þversniðs" height=auto width=auto>
+
+
+                    </article>
+
+
+
+
+                    <article class="skiptingar">
+
+                        <p>
+                            Annað sem ég vildi athuga, var geta Fusion 360 til að leyfa mér að extruda teikningu að skáplani, þar sem ég þarf með öllum líkindum ehv að teikna innan í tepottinum. Ég byrjaði á að teikna holóttan sívaling með hornréttu plani (tangent plane) á yfirborði sívalingsins, ásamt kassa til hliðar. Á kassann teiknaði ég minni ferhyrning og extrudeaði að planinu.
+                        </p>
+                        <article class="skiptingar">
+                            <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/Extrude%20a%C3%B0%20plani_Test_ADAL.PNG" alt="Prufa á extrude eiginleikum Fusion" height=auto width=auto>
+                        </article>
+
+
+
+
+
+
+
+
+                    </article>
+                    <article class="skiptingar">
+                        <p>
+                            Þetta virkaði nokkuð vel, en eins og sérst hér fyrir neðan þá fór extrude-ið ekki alla leið, þannig að ég lagaði offset extrude-sins örlítið (lét hann fara örlítið lengra en planið) og valdi svo join, þannig að hlutirnir myndu festast.
+                        </p>
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/Extrude%20a%C3%B0%20plani_Test_ADAL_2.PNG" alt="Nærmynd af extrude prófi" height=auto width=auto>
+                        <p>
+                            Einnig athugaði gerði ég mér grein fyrir að það yrði margfallt auðveldara að teikna einn helming ketilsins og spegla honum um sig sjálfan. Þetta var athugað með nokkuð einföldum hlut í Fusion.
+                        </p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="3d-prent/Mirror_test.PNG" alt="Speglun hlutar í Fusion athuguð" height=auto>
+
+                        <p>
+                            Fyrstu drög teketilsins litu nokkurnvegin svona út
+                        </p>
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/Fyrstu_drog_ADAL.PNG" alt="Fyrstu drög ketilsins teiknuð í Fusion" height="cm">
+                        <p>
+                            Hólfaskiptingin fyrir mismunandi vökvanna áttu sér stað lárétt fyrir miðju. Héðan þyrfti bara að búa til leiðslur fyrir útgang/inngang vökvanna ásamt höldu fyrir ketilinn. En ég var nokkuð fljótur að átta mig á því að þetta gæti verið stórt vandamál, þar sem ég væri að reyna að prenta amk. tvo lárétta fleti í lausu lofti, án stuðnings, eitthvað sem reynir mikið á brúunareiginleika prentarans (á þessum tíma átti eftir að framkvæma allar prufur til þess að skoða getu prentarans). Auðvitað væri hægt að setja inn styrkingar í millirýminu, en það væri mjög erfitt að fjarlægja þær þar sem að aðgengið er ekki nægilega gott. Þ.a.l. hófst smá rannsókn, þ.e.a.s. hvort þetta væri í raun hægt. Eftir stutta leit fann ég myndband sem að hjálpaði mér gífurlega. </p>
+
+
+                    </article>
+                    <article class="skiptingar">
+                        Doug Fielson <a href="https://www.youtube.com/watch?v=uf9LsS3NbXw" target="_blank">bjó til einn svipaðann teketil</a> þar sem hann skipti upp rýmunum tveimur með láréttu plani, í stað lóðrétts plans eins og var í upphaflegum drögum mínum. Með því að vera með lóðrétta plötu fyrir aðskilnað vökvanna sleppum við eitt óstutt lárétt plan (upphaflegi aðskilnaðurinn) og búum einnig til stuðning fyrir topp flötinn eins og sjá má á myndinni fyrir neðan.
+
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/Skipting.PNG" alt="Hönnun teketilsins uppfærð">
+                        <p>
+                            Því næst hannaði ég þversnið til þess að vinna með, extrudeaði því og sneri í 180 gráður. Eftir það bjó ég til aðskilnaðarsvæði fyrir vökvana innan hlutarins</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="3d-prent/Skipting_2.PNG" height=auto alt="Teikningar og uppbygging teketils framkvæmd">
+                        <p>
+                            Eftir að skelin var komin fór næsta skref í gang, búa til höldu fyrir tebollan ásamt inngang og útgang fyrit vökvana. Þar sem að við höfum nú þrívíðan hlut í Fusion er ekki alveg eins einfalt að teikna bara ehv geometríu og extrudea. Við viljum á ákveðna geometríu á ákveðið yfirborð/svæði hlutarins. Þetta tókst með því að búa til Offset plan (mynd til vinstri) frá upprunalega hnitakerfi teikningarinnar, og þannig teikna inn á ákveðinn hluta ketilsins. Á myndinni til hægri má þá sjá hvernig tvívíða teikning kemur sér fyrir á hlutnum, m.t.t. Offset plansins. </p>
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/OFFSET.PNG" height=auto alt="Halda teiknuð á ketil">
+                        <p>Bæði halda og háls ketilsins voru teiknuð “fríhendis” og fest við hlutinn með sama máta og var sýnt hér fyrir ofan. Hálsin kom vel út að utan en ehv klikkaði að innan, eins og sérst á myndinni fyrir neðan. Ég notaði split body tool til þess að fjarlægja þennan óþarfa búta úr teikningunni.
+                        </p>
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/SW_1.PNG" height=auto alt="Lagfæring á innihaldi teketils">
+                        <p>Til þess að búa til útgöngu-/inngönguleiðir fyrir vatnið bjó ég til tvær holur að aftan með vinnuplanininu fyrir neðan (fékkst með Plane Tangient To tólinu).
+                        </p>
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/SW_2.PNG" height=auto alt="Inngönguleið í teketilinn framkvæmd">
+                        <p>
+                            Með svipuðum aðferðum of fyrir hölduna/hálsin, bjó ég til tvö vinnuplön til þess að hanna úrtennsluleiðina. </p>
+                    </article>
+                    <img style="padding-bottom: 11.62px;" class="center_2" src="3d-prent/H%C3%961_Vinnupl%C3%B6n_fyrir_rana.PNG"  alt="Vinnuplön fyrir útgönguleiðir sett upp">
+                    <article class="skiptingar">
+                        <p>
+                            Nr. 1 er vinnuplan sem er staðsett í miðjum katlinum, nr. 2 er vinnuplanið staðsett við aðskilnaðarsvæði vökvanna og nr. 3 er teikningin (teiknuð á vinnuplan 2) fyrir útrennslisleiðina. Teikningin var extrudeuð og því speglað um miðju ketilsins. Hér fyrir neðan má sjá loka niðurstöðu hönnunarinnar. <a href="3d-prent/Teketill_FILE.step" download>Hér má ná í STEP skrá af teketilnum.</a>
+                        </p>
+
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/NIDURSTADA.PNG" height=auto  alt="Loka niðurstaða teikningar">
+                        <p>
+
+                            Því næst var að átta mig á mögulegum vafaatriðum í prentinu, þ.e. hvað svæði ætti 3D prentarinn erfitt með að prenta í módelinu. Að prófa eiginleika prentara er mikilvægur liður í prent ferliu, t.d. þarf að athuga hversu langt prentarinn getur prentað á milli tveggja staða í lausu lofti með brúunar prófi (e. bridging test) og einnig á hvaða horni prentarinn getur prennt í lausu lofti (e. overhang test). Í þessu prenti voru aðal vafaatriðin overhang og brúun. Hægt er að leita sér af allskonar tilbúnum prófum til þess að skoða ákveðna eiginleika prentarans. <a href="https://www.thingiverse.com/thing:2656594/files?fbclid=IwAR0WwFQa_Ha6E_fs6WpLGRPFhtZB4Lj0TEFAAhLNjcIXy73WdZU5Y5wvY_A" target="_blank">Hér</a> má finna eitt próf sem prentað var út. Í þessu prenti var ég aðalleg að skoða overhang-ið þegar það kemur að handelinu, skelinni og stútnum. Overhangið kom rosalega vel út eins og sést a myndinni hér fyrir neðan.
+                        </p>
+                        <img style="padding-bottom: 11.62px;" class="center_2" src="3d-prent/3D_TEST.jpg" height=auto  alt="Fyrsta prófun þrívíddarprentarans">
+                        <p>
+                            Brúnar prófið sem var innifalið í prófinu hér fyrir ofan var hinsvegar ekki nægilega langt fyrir mig. Lengsta brúunin var u.þ.b. 2.5 mm, en ég þurfti að athuga u.þ.b. 27/28 mm fyrir svæðið sem er sýnt hér fyrir neðan.</p>
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/ATH_F_BRUUN.PNG" height=auto  alt="Athugun á brúunarþörf módelsins">
+                        <p>
+                            Þannig að ég bjó til lítið brúunarpróf í Fusion 360 til þess að vera alveg öruggur um að prentið myndi ekki eyðinleggjast. Ég lét prófið fara örlítið lengra í testinu til að vera handviss um að allt virki. Prentstillingar voru þær nákvæmlega sömu og fyrir teketilinn, sem verður farið yfir hér fyrir neðan.</p>
+                        
+                        
+        
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="left" src="3d-prent/Teikning_bruun.PNG" height=auto  alt="Teikning af brúunarprófi">
+                        <p>
+                            Prófið kom virkilega vel út í prentinu eins og sést hér á myndunum. Greinilegt að prentarinn fer létt með þá lengd sem þörf er á. <a href="3d-prent/Bridge_test/Bridge_FILE.step" download>Hér má ná í STEP skrá af prófinu.</a></p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="3d-prent/PRINTED_TEST.png" height=auto>
+                        <p>
+
+                    </article>
+                    <article class="skiptingar">
+                        <h4>Prent</h4>
+                        Nú þegar hönnunin hefur verið gerð þarf að undirbúa hana fyrir prent. Fyrst þarf að vista það sem .STL skrá og setja inn í Slicer af þínu vali. Tilgangur Slicersins er að búta niður módelið í ör þunn lárétt lög og kortleggja prentstaðsetningar módelsins fyrir prentaranum.
+                        Þar sem ég ætlaði að nota Prusa MK3S + MMU2S prentara notaðist ég við <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank">Prusa Slicerinn</a>. Hér fyrir neðan má sjá interface Prusa Slicersins eftir að hluturinn er kominn inn í forritið. Einnig má sjá hvaða grunn stillingar ég ákvað að nota fyrir prentið.
+                        <img style="padding-bottom: 11.62px;" class="center_2" src="3d-prent/Slice/Slice%20Stillingar.PNG" height=auto  alt="Grunnstillingar fyrir PrusaSlicer">
+                        
+                        <ul class=listi_3>
+                            <li>0.20mm var valið því mig vantaði ekkert alltof fíngerðan hlut</li>
+                            <li>Prusament PLA var valið þar sem ég var að prenta úr PLA plasti</li>
+                            <li>Engar supports voru valdar þar sem ég taldi ekki að þess þurfti</li>
+                            <li>Infill var valið um 15% þar sem óþarfi er að vera með mikið infill í þessum hlut</li>
+                            <li>Hluturinn var einnig skalaður niður í 80% til þess að minnka óþarfa plastnotkun.</li>
+
+                        </ul>
+                        <p>
+                        Mikilvægt er að velja rétta týpu af prentara áður en prentið er sett í gang! Ég passaði mig ekki nægilega vel á þessu við fyrsta prent. Upphaflega valdi ég Prusa MK3S í stað þess að velja Prusa MK3S + MMU2S. MMU2S er viðbót við MK3S sem gerir notanda kleift að prenta út í mismunandi litum án nokkurskonar afskipta frá notenda. Þar sem að ég ætlaði eins að prenta út í einum lit hélt ég að það væri nóg að nota aðeins MK3S stillingarnar, en svo var ekki. Hér fyrir neðan má sjá misheppnað prennt sem átti sér líklegast stað vegna þessa stillinga ásamt villumeldingunni sem kom upp á prentaraskjánum.</p>
+                        <img id="long_mynd" style="padding-bottom: 11.62px;" class="center" src="3d-prent/Slice/failed.PNG" height=auto  alt="Misheppnað prent v. villu í uppstillingu">
+                        <p>Næst er það smella á slice og leyfa forritnu að skipta hlutnum upp.</p>
+                        <img  style="padding-bottom: 11.62px;" class="center_2" src="3d-prent/Slice/Slice.PNG" height=auto  alt="Vinnurammi Prusa - Slice">
+                        <p>Einnig gerði ég ráðstafanir fyrir því að brúunin yrði erfið ef brúunarlagið væri ekki rétt sett upp. Því fór ég í prentstillingarnar til þess að skoða þetta betur.</p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/Slice/Briding%20angle%2090.PNG" height=auto  alt="Breyting á brúunareiginleikum í prenti - PrusaSlicer">
+                        
+                    <p>Með því að breyta brúunarhorninu eftir mínum þörfum er hægt að koma í veg fyrir mikið vesen. Hér má sjá breytinguna á brúunarlaginu eftir því hvert brúunarhornið er. Á fyrstu myndinni er brúunarhornið 0°, á annari 45° og á þeirri síðustu 90° - sem hentar mjög vel!</p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/Slice/Br%C3%BAun.PNG" height=auto  alt="Breytingar í brúunar stillingum í PrusaSlicer sjónrænt">
+                    <p>Því næst þarf að vista G-Code skránna og setja inn í prentarann á SD-korti. Þegar SD-kortið er komið inn í prentarann þarf einfaldlega að fylgja eftirfarandi myndum.</p>
+                    
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/Slice/PRENENNT.png" height=auto  alt="Upplýsingarskjár Prusa">
+                    <p>Oooooog BINGÓ BJÖSSI, nokkrum tímum seinna var ég kominn með glænýjan teketil sem virkar sem teketill, en ekki sem teketill leigumorðingjans, því það lekur á milli aðskilnaðasvæðanna. Það hefur greinilega ekki verið nægilega lag fyrir aðskilnaðinn og þar af leiðandi lekur á milli.</p>
+                         <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/Slice/LOKA_PRENT.png" height=auto  alt="Útkoma prentsins">
+                    </article>
+                    <article class="skiptingar">
+                    <h4>3D skönnun</h4>
+                        <p>
+                        Til þess að hefja ferlið þurfti ég að finna forritið sem yrði notað. <a href="https://www.3dflow.net/3df-zephyr-free/" target="_blank">3DF Zephyr</a> varð fyrir valinu. Ég náði í Zephyr Free og hafðist handa. Við val á hlut til þess að skanna hafði ég í huga að best er að finna hlut sem hefur litríka/breytilega grafík á yfirborði hans. Þetta auðveldar Zephyr að búa til módelið þar forritið les punkta af myndum og tengir þá saman í möskva. Ef hluturinn er allur eins á yfirborðinu og samhverfur getur orðið hætta á lélegu módeli. Með þetta í huga valdi ég að skanna Jalapeno-Lime Loop nikótínpúða dós. </p>
+                        <p>
+                        Til að geta sett Zephyr í gang þurfti ég góðan grunn af myndum. Því fleiri myndir, því fleiri punktar til þess að greina, því betra módel. Þar sem ég er að vinna með ókeypis útgáfuna af Zephyr er mér aðeins kleift að nota 50 myndir til að búa til módelið, en hægt er að kaupa leyfi af forritinu sem gefur valmöguleikann á endalausum fjölda mynda. Ég tók mínar 50 myndir umhverfis hlutinn og setti þær á fartölvuna mína í gegnum Google Drive.
+                        </p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/Fj%C3%B6ldi_mynda.PNG" height=auto  alt="Fjöldi mynda sem verða notaðar í skönnun sýndur">
+                        <p>Því næst var opnað Zephyr og búið til nýtt verkefni í Workflow. 
+                        </p>
+                         <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/New_project.png" height=auto  alt="Sýnt hvernig á að búa til nýtt verkefni í Zephyr">
+                        <p>Upp kemur þessi gluggi, ég breytti ekki neinu hér inni og smellti á Next.</p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/New_project_2.PNG" height=auto  alt="Upplýsingaskjár í Zephyr">
+                        <p>Þaðan þarf að smella á plúsinn og velja allar 50 myndirnar sem verða notaðar.</p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/B%C3%A6ta_vid_myndb.PNG" height=auto  alt="Myndaval framkvæmt í Zephyr">
+                        <p>
+                        Þaðan má smella svo á Next þar til að þessi gluggi kemur upp og smella á Run.</p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/RUNTHATSHIUP.PNG" height=auto  alt="Greining mynda keyrð í Zephyr">
+                        <p>Eftir smá stund kemur upp þessi gluggi, þaðan má smella á Finish og upp koma punktarnir sem hafa verið greindir út frá myndunum.</p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/PUNKTAR.PNG" height=auto  alt="Fyrsta niðurstaða skönnunar">
+                        <p>
+                        Þetta lítur ekkert alltof vel út, en ferlið er langt frá því að klárast, þannig að við höldum áfram. Næst þarf að fara í Workflow, fljóta yfir Advanced og velja Dense Point Cloud Generation.</p>
+                         <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/DENSE.png" height=auto  alt="Dense Point Cloud Creation í Zephyr fyrir betri niðurstöðu">
+                        <p>Upp koma svipaðir gluggar og komu í síðasta skrefi. Nú má smella á Next þar til að Run glugginn kemur upp aftur og smella svo á Run. Eins og sést hér fyrir neðan lítur þetta mun betur út.</p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/FINISH_3PNG.PNG" height=auto  alt="Niðurstaða frá viðbótum Dense Point Cloud Creation ">
+                        <p>Næst förum við aftur í Workflow og smellum nú á Workflow/Advanced/Mesh Extraction, aftur koma upp sömu gluggar og við endurtökum skrefin sem voru tekin hér fyrir ofan. </p>
+                        <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/FINISH_4PNG.PNG" height=auto  alt="Niðurstaða frá viðbótum Mesh Extraction">
+                        <p>Nú fer allt að smella saman, héðan er aðeins eitt skref eftir. Smellum nú á Workflow/Textured Mesh Generation og endurtökum skrefin hér fyrir ofan.</p>
+                         <img  style="padding-bottom: 11.62px;" class="center" src="3d-prent/3d-skann/LIKAN.PNG" height=auto  alt="Niðurstaða frá Textured Mesh Generation"> 
+                        <p>Nú höfum við fullklárað 3D módel sem að kom mjög vel út! <a href="3d-prent/3d-skann/Loop.zep" download>Hér</a> má ná í afrit af 3d módelinu, skránna þarf að opna í Zephyr.</p>
+                        
+                        
+                        
+                    </article>
+
+
+
+
+
+
+
+
+
+
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <section>
+                            <header>
+                                <h2>Alm. upplýsingar</h2>
+                            </header>
+
+
+                            <div class="col-4 col-12-medium">
+                                <ul class="contact">
+                                    <li>
+                                        <h3>Skóli</h3>
+                                        <p>
+                                            Háskóli Íslands
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>Tölvupóstur</h3>
+                                        <p><a href="mailto:ito2@hi.is">ito2@hi.is</a></p>
+                                    </li>
+                                </ul>
+
+                                <div class="col-4 col-12-medium">
+                                    <section>
+                                        <a href="#" class="image featured"><img src="/myndir/University%20of%20Iceland_hvitt.png" alt="" /></a>
+                                    </section>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </section>
+                        <div class="col-12">
+
+                            <!-- Copyright -->
+                            <div id="copyright">
+                                <ul class="links">
+                                    <li>&copy; Heimasíða Inga Þórs. All rights reserved.</li>
+                                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

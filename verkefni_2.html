@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Verkefni 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+
+            <!-- Logo -->
+            <h1>Verkefni 2 - VÉL608G</h1>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Heim</a></li>
+                    <li><a href="#">Verkefni</a>
+                        <ul>
+                            <li><a href="verkefni_1.html">Verkefni 1 - Stofnun heimasíðu</a></li>
+                            <li><a href="verkefni_2.html">Verkefni 2 - Tölvustuddur skurður</a></li>
+                            <li><a href="verkefni_3.html">Verkefni 3 - 3D prentun og 3D skönnun</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="um_mig.html">Um mig</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <!-- Content -->
+                <article class="box post">
+                    <article class="skiptingar">
+                        <h3>Tölvustuddur skurður</h3>
+                        <p>
+                            Markmið verkefnis 3 er að hanna og skera út hlut með geislaskurði. Hönnunin þarf að vera parametrísk og einhverstaðar þarf að koma fram geirnegling (pressfit) í byggingareiningum. Einnig á að nota vínylskera til þess að búa til eitthvað.
+                        </p>
+
+                    </article>
+
+                    <article class="skiptingar">
+                        <h4>Geislaskurður</h4>
+                        <p>Lykil atriði og ein af skorðum verkefnisins er að búa til og hanna hlut sem er samsettur úr nokkrum byggingareiningum og er aðeins festur með geirneglingu. Ekki er leyfilegt að nota lím eða skrúfur þegar hluturinn er samsettur eftir að skurðurinn hefur verið framkvæmdur. Önnur skorða er stærð plötunnar sem við fáum, eða 50cmx50cm plata úr birkikrossvið eða akríl.</p>
+                        <h5>Hönnun</h5>
+                        <p>Ég byrjaði á að leita mér af hlutum til þess að geislaskera og áttaði mig á því að mig vantaði ljósakrónu á heimilið. Eftir stutta leit
+                            <a href="https://www.youtube.com/watch?v=jJL0XoNBaac" target="_blank">fann ég </a> ljósakrónu sem mér fannst nokkuð flott og ákvað að búa til svipaða.  Hér fyrir neðan má sjá fyrstu drögin að hönnunninni. 
+                        </p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Draft_lj%C3%B3sakr.jpg" alt="Hönnun ljósakrónu" height=auto width=auto>
+                        <p>Hún verður sett upp af tveimur hringum sem eru með litlu extrude á hverjum fjórðung. Síðan verður “umgjörðin” flötur með living hinge sem hægt verður að geirnegla við hringina með fingurliðum. Þar sem ég ætla að hafa living hinge þarf efnið að vera eins sveigjanlegt og hægt er, því valdi ég að vinna með krossviðsplötu í stað fyrir akríl, þar sem akríllinn er mun stífari en krossviðurinn.</p>
+                        <p>
+                            Byrjum á að teikna efri hringin. Hann var teiknaður upp með parametrum til þess að auðvelda ferilð og einnig auðvelda breytingar sem mun þurfa, þar sem ég teiknaði þetta aðeins út frá útliti - en ekki út frá praktík. Hér fyrir neðan má sjá fyrstu teikninguna ásamt öllum parametrum.
+                        </p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Parametric%20grunnur.PNG" alt="Fyrstu parametranir settir upp ásamt topphring" height=auto width=auto>
+                        <p>Hringurinn var síðan extrude'aður með efnisþyktinni sem var einnig parametruð.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Grunnur_extrude.PNG" alt="Topphringur búinn til" height=auto width=auto>
+                        <p>Því næst var að búa til umgjörðina. Til þess fylgdi ég                             
+                            <a href="https://www.youtube.com/watch?v=nt-44j15xeI&t=193s" target="_blank">eftirfarandi YouTube myndbandi</a>. Ég byrjaði á að búa til Sheet Metal Rule fyrir efnið okkar. Í rauninni þarf bara að setja upp reglu með efnisþyktinni til að sjá til að allt passi vel saman þar sem við munum skera hlutinn út frá ofanvarpi eininganna. Hafa þarf hinsvegar í huga að ekki er hægt að parametra Sheet Metal Rule.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/sheet_rule_1.PNG" alt="Leiðbeiningar að sköpun Sheet Metal" height=auto width=auto>
+                    <p>Nú bý ég til nýjan hlut, þar sem við viljum byggingareiningarnar í sundur seinna í ferlinu, valdi sheet metal týpuna og valdi nýju Sheet Metal regluna. Ástæðan fyrir því að nota sheet metal er einfaldlega sú, að þegar hlututinn er teiknaður er hægt að varpa/breiða út úr hlutnum</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/NC.PNG" alt="Leiðbeiningar á nýjum hlut innan teikningar" height=auto width=auto>
+                        <p>Svo teiknaði ég umgjörðina á viðeigandi plan. Til þess að fá umgjörðina til þess að passa teiknaði ég radíusinn frá miðju fyrir hvorn fjórðung, teiknaði helminginn af pressfit línunni út frá því og notaði svo center point arc á milli línanna tveggja.</p>
+                     <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Umgj%C3%B6r%C3%B0.png" alt="Umgjörð teiknup" height=auto width=auto>
+                        <p>Því næst bjó ég til boddy með því að nota Flange skipunina.</p>
+                             <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Flange.PNG" alt="Leiðbeiningar á notkun Flange skipunar" height=auto width=auto>
+                    <p>Nú kemur eiginleiki sheet metal sem við viljum sækjast við, vörpunin. Með því að nota Unfold skipunina í Fusion360, fletjum við út boddyið sem ég bjó til áðan, og því getum við teiknað living hinge á flötinn sem beygjist.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Unfold.PNG" alt="Leiðbeiningar á notkun Unfold skipun fyrir Sheet Metal" height=auto width=auto>
+                        <p>Því næst bjó ég til nýjan sketch á græna svæðinu, afritaði geomertýu hans með Project Geometry skipuninni og faldi svo bodyið sjálft svo að ég sæji aðeins teikninguna mína.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Project_J.PNG" alt="Eiginleikum plötu varpað í aðra teikningu" height=auto width=auto>
+                        <p>Nú þurfti ég að teikna hjarirnar. Út frá myndbandinu hér fyrir ofan byrjaði ég að plana hvernig hjarirnar ættu að vera settar upp. Hér fyrir neðan má sjá undirbúninginn fyrir teikninguna og þar af leiðandi parametrana, ásamt parametrunum upp settum í Fusion. Hér fyrir neðan má sjá útreikningana sem fóru í að ákvarða fjölda bila út frá forákvörðuðu bili á milli ráka ásamt parametrunum upp settum í Fusion.
+</p>
+
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/274171337_414264920503412_1896967661777778753_n.jpg" alt="Drög að parametrum fyrir hjarir" height=auto width=auto>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Parametras%C3%BApa.PNG" alt="Parametrar notaðir í hjör" height=auto width=auto>
+                        <p>Til þess að getað notað Fjöldi_bila parameterinn var nauðsynlegt að velja No Unit þegar hann var búinn til. Með litlu brasi, þökk sé parametrunum, voru hjarirnar teiknaðar. Til þess að halda áfram er mikilvægt að eyða út línunum sem voru projectaðar á teikninguna ásamt hjálparlínunum fyrir bil á milli rifa hér áðan eins og sérst hér til hægri.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Parametrar_hinge.PNG" alt="Uppsetning hjara án Rectangular Pattern" height=auto width=auto>
+                        <p>Þar á eftur búum við rectangular pattern til þess að fjölda framleiða þessar línur og þar af leiðandi búa til hjör. Þegar rectangular pattern hefur verið valið þarf að velja allar línurnar sem voru teiknaðar, velja Spacing í Distance Type, setja breytuna Fjöldi_bila í Quantity og svo setja Bil_m_hjara/2 í Distance. Ástæðan afhverju við þurfum að deila Bil_m_hjara með tveimur er hreinlega af því að við gerðum ráð fyrir tveimur bilum í Fjöldi_bila breytunni.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Patern.PNG" alt="Uppsetning hjara með Rectangular Pattern" height=auto width=auto>
+                        <p>
+                        Því næst þarf að sýna body-ið aftur, velja skipunina Project og smella á body-ið. Þá hefur okkur tekist að varpa teikningunni af hjörunum yfir á body-ið.</p>
+                          <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Project_Hinge.PNG" alt="Hjarir varpaðar á plötu" height=auto width=auto>
+                        <p>Því næst þarf að búa til press fit hluta hjaranna. Ég miðaði einfaldlega við að hringirnir myndu festast einum cm frá toppi umgjarðarinnar. Ég endurtók öll skrefin sem lýst eru hér fyrir ofan með það í huga að búa til göt fyrir festingarnar og endaði með þetta.</p>
+                          <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/fitting.PNG" alt="Pressfit göt hönnuð" height=auto width=auto>
+                   <p>Hinsvegar má sjá á myninni hér fyrir neðan, að gatið fyrir festinguna og gatið fyrir fyrsta hluta hjaranna er mjög nálægt hvor öðrum, því ákvað ég að breyta festingunni örlítið svo að allt komist fyrir án þess að veikja efnið.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Veiking.PNG" alt="Lagfæring á hjörum" height=auto width=auto>
+                        <p>Næst ákvað ég að búa til örlitla grip kló á enda hverri festingu hringsins. Sjá má hana hér fyrir neðan.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/MED_FITTI.png" alt="Viðbót topphrings" height=auto width=auto>
+                        <p>Nú þegar allt var nánast komið þurfti ég bara að breyta parametrunum svo að ég fengi nægilega fína stærð á ljósakrónu. Ég bjó til sára einfalt líkan til þess að finna út hvað ég get gert krónuna stóra út frá efninu sem við fáum (50x50 krossviðsplata), m.t.t. þvermál hringsins, ásamt lengd umgjarðarinnar. Niðurstaðan var sú að 12,5cm hringur í þvermáli ásamt 27 cm löng umgjörð hentar ágætlega. Ég breytti viðeigandi parametrum í Fusion og fékk eftirfarandi niðurstöðu. Allt leit vel mjög vel út fyrir utan hjörina. Eins og sérst á myndinni hér fyrir neðan hefur patternið ekki náð alla leið að raunverulega enda hennar. Ég sá ekki hvað gæti mögulega verið að fara úrskeiðis, en hinsvegar virkaði að bæta einum við parameterinn fyrir fjölda bila.
+</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/SUI.PNG" alt="Lagfæring á hjörum" height=auto width=auto>
+                        <h5>Undirbúningur fyrir skurð í Fusion</h5>
+                        <h6>Kerf prófun</h6>
+                        <p>Áður en haldið er áfram þarf að athuga lykiatriði í velgengni geirneglingar við geislaskurð, a.k.a. Kerf prófun. Kerf er í rauninni þverskurður geislans sem skorið er með í plöunni og þar sem geislaskerinn sker meðfram ofanvarpi byggingareininganna, sjá hér neðar, þurfum við að gera ráð fyrir þverskurði geislans til að offset'a skurðinn og þ.a.l. gera hann betri. Einnig þarf að nefna að hver geislaskurður hefur mismunandi Kerf, þannig að niðurstaðan hér fyrir neðan er ekki algild fyrir öll tæki.</p>
+                        <p>Ein leið til þess að framkvæma þetta próf er með því að teikna 10 litla kassa sem voru í lengdina 100mm á lengd. Síðan eru þessir kassar skornir með geislandum, raðaðir saman hlið við hlið og mældir. Síðan er lengdinni deilt með fjöld lína sem þurfti að skera, niðurstaðan er Kerfið. Myndræna útskýringu ásamt myndum af vettfangi má sjá hér fyrir neðan.</p>
+                           <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/KERF.jpg" alt="Útskýring á Kerf prófi" height=auto width=auto>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Kerf_pr%C3%B3f_1.jpg" alt="Mynd frá vettfangi_1" height=auto width=auto>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Kerf_pr%C3%B3f_2.jpg" alt="Mynd frá vettfangi_2" height=auto width=auto>
+                        <p>
+                        Niðurstaða kerfsins var um það bil 0.105-0.106mm. Dembum okkur nú aftur í Fusion! </p>
+                        
+                        <p>
+                        Einnig bjó ég til botn festinguna með sama máta og ég gerði áður. Einnig bjó ég til þrjú eintök af umgjörðum með copy paste. Toppnum var einnig breytt til þess að vera líkari upphaflegu drögunum.</p>
+                        <p>Til þess að undirbúa ferlið fyrir skurðinn þarf ég að hafa allar teikningar í sama plani. Ótrúlegt en satt á vill Fusion ekki leyfa mér að færa umgjörðina mikið til án þess að unfold-a bodyinu. Ég hélt að það yrði vesen fyrir komandi skref, en varð í rauninni ekkert mál. Ég byrjaði á að bretta upp á umgjörðina með Refold Faces skipuninni.</p>
+                    <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/REFOLD.PNG" alt="Flötur Refoldaður" height=auto width=auto>
+                        <p>
+                        Síðan setti ég teikninguna af hörinni í sama plan og festingarnar með skipuninni Align.</p>
+                    <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Align.PNG" alt="Topphringur og flötur í sama plani" height=auto width=auto>
+                        <p>Nú þarf bara að aðskilja alla hlutana með Move skipuninni svo þeir séu sjáanlegir. Loka niðurstaðan ætti að líta svona út.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/MOVE.png" alt="Uppröðun á einingum" height=auto width=auto>
+                    <p>Næst þarf að setja upp nýtt set up fyrir skurðinni. Nauðsynlegt er að færa sig út Design yfir í manufacturing og þaðan smella á Setup.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Manufactur.png" alt="Undirbúningur fyrir skurð - SetUp" height=auto width=auto>
+                    <p>Þaðan þarf að velja Select Z axis/plane and X axis og svo smella á planið sem hringurinn myndar, þar sem hans Z-ás stefnir upp.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Setup.PNG" alt="Undirbúningur fyrir skurð - Z-ás bendir upp" height=auto width=auto>
+                    <p>Í mínu tilfelli kom upp eftirfarandi villumelding, það er í lagi að hunsa hana.</p>
+                          <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Setup_Warning.PNG" alt="Skjáskot af villumeldingu" height=auto width=auto>
+                    <p>Þaðan þarf að setja upp tól skurðsins, þá aðallega kerfið sem er í rauninni þverskurður geislans sem skorið verður með. Inn í fabrication þarf að velja cutting og svo 2D Profile.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/2d-profile.PNG" alt="Geislaskurðar prófíll valinn" height=auto width=auto>
+                        <p>Hér smellum við á Select Tool til þess að velja eða búa til kerf sem að hentar okkar geislaskurð.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/2d-profile-1.PNG" alt="Stillingar á geislanum valin" height=auto width=auto>
+                        <p>Velja skal Laser Cutter, fara í Cutter flipann og skrifa niður niðurstöðu kerf prófunarinnar.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Laser_cutter.PNG" alt="Staðsetning geislaskurði fundin" height=auto width=auto>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Laser_cutter_2.PNG" alt="Kerf lagað skv. þörfum út frá niðurstöðum" height=auto width=auto>
+                        <p>Því næst skal smella á Geometry flipann og velja öll þau plön sem að á að gera ráð fyrir í leiserskurðinum, þaðan má smella OK.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/2d-profile_Cut.PNG" alt="Tvívíður prófíll búinn til af öllum einingum" height=auto width=auto>
+                        <p>
+                        Nú þurfum við að herma geisla skurðinn með því að fylgja leiðbeiningunum hér fyrir neðan.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/Simulate.png" alt="Fyrsta hermunin sett í gang" height=auto width=auto>
+                        <p>Þegar að ég fylgdist með hermuninni fyrir teikninguna mina tók ég eftir því að Fusion tók aðeins örlítinn hluta af hjörunum sem voru teiknaðar, sama hvað ég reyndi. Ég fór til Hafliða og bað um aðstoð. Hann benti mér á að ég þyrfti ekki að gera ráð fyrir kerfinu í hjörunum þar sem þarf í rauninni ekki að offseta geislann fyrir raufarnar, þar sem þær eru bara línur, það þarf aðeins að gera það fyrir útlínur umgjarðarinnar.</p>
+                        <p>Hann benti mér einnig á að ég gæti einfaldlega búið til DXF skrá, sem við notum fyrir skurðinn, beint út frá teikningunni af rákunum og sett hana inn í Inkscape – meira um Inkscape seinna. Þ.a.l. fór ég beint í það og vistaði hana sér eins og sérst hér fyrir neðan.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/DFX_SKETCH.png" alt="Leiðbeiningar að vistun DXF skráar út frá teikningu" height=auto width=auto>
+                        <p>Nú reyndi ég að keyra hermunina aftur, nema í þetta skipti var ég með topp-/botnfestingu ásamt aðeins einni teikningu af umgjörðinni. Planið var að framkvæma hermunina á einni umgjörð og síðan afrita og raða upp þrisvar sinnum í Inkscape. Ég valdi allt það nauðsynlega, en Fusion tók þetta ekki í mál og hunsaði hluta kassans aftur.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Mogulegt_1.PNG" alt="Hermun númer 2" height=auto width=auto>
+                        <p>Því ákvað ég að búa til nýjan component og varpa teikningunni með Project beint á nýja glutinn, extrudea og undirbúa fyrir skurð.</p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/proje_%C3%BEr.PNG" alt="Hönnun frá fleti varpað yfir í nýjan hlut" height=auto width=auto>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/extrude_%C3%BEr.PNG" alt="Nýr hlutur extrudeaður" height=auto width=auto>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/fyrir_hermun_%C3%BEr.PNG" alt="Tvívíður prófíll settur upp" height=auto width=auto>
+                        <p>Nú þegar ég smelti á Simulate gekk allt eins og í sögu. Til þess að fylgjast með hermuninni smelli ég á Spila takkann eins og sést hér fyrir neðan.</p>
+                          <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Sim_%C3%BEr.PNG"alt="Niðurstaða hermunar" height=auto width=auto>
+                        <p>Ef zoomað er inn á útlínur byggingareininganna getum vð séð örlitlar og þunnar línur sem fara aðeins inn fyrir upphaflegu teikninguna. Þetta er hermunin að gera ráð fyrir kerfinu. </p>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/SIM_KERF.png"alt="Leið geisla sýnd m.t.t. kerf" height=auto width=auto>
+                        <p>Eftir að hermunin hefur verið kláruð þarf að útfæra DXF skjal svo að hægt sé að skera. Byrjum á að smella á Post Proccesing.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/PP.png"alt="Post Process staðsetning í Fusion" height=auto width=auto>
+                        Hér þarf að passa upp á að velja DFX skrá og haka í Output as 2D og Only Cutting sbr. myndinni hér fyrir neðan. 
+                        <a href="2d-prent/Lj%C3%B3sakr%C3%B3na.step" download>Hér má ná í STEP skrá af teikningunni</a>, <a href="2d-prent/LJOSAKRONA.dxf" download> hér má ná í DFX skrá af bygginngareiningunum</a> og <a href="2d-prent/R%C3%81KIR.dxf" download> hér má ná í DFC skrá af raufunum</a>.
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/PP_1.PNG"alt="Leiðbeiningar fyrir Post Procsess" height=auto width=auto>
+                        <p>Þegar að DFX skráin hefur verið búin til erum við einu skrefi fjær því að fá einingarnar í hendurnar okkar! Nú náum við í/opnum <a href="https://inkscape.org/" target="_blank">Inkscape</a> og búum til nýtt skjal. Með því að finna DFX skránna fyrir byggingareiningarnar og draga inn á vinnusvæðið náum við að importa gögnunum beint. Við þessa aðgerð koma upp gluggarnir hér fyrir neðan. Í fyrri glugganum þarf að velja Handvirka kvörðun og setja kvörðunarhlutfallið sem 1,0. Í seinna glugganum má haka í fyrsta punktinn og smella á Í lagi.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Import%20stillinga.PNG"alt="Import stillingar Inkscape - 1" height=auto width=auto>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Import%20stillinga_2.PNG"alt="Import stillingar Inkscape - 2" height=auto width=auto>
+                    <p>Inn í Inkscape er einnig mikilvægt á að skilgreina vinnurýmið okkar, sem er í raun stærð hlutarins sem við fáum að skera út. Í mínu tilfelli fékk ég 50x50cm krossviðsplötu, þannig að ég ýti á Shift+Ctrl+D og set rétt mál inn eins og sérst fyrir neðan. Ef einhverjar línur sem á að skera eru ekki innan vinnurammans mun geislaskerinn ekki bera kennsl á þær og því ekki skera þær út, því er mikilvægt að hafa þetta rétt. Hér fyrir neðan má einnig sjá uppröðun á einingunum innan vinnurammans.</p>
+                    <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Skraareiginleikar.PNG"alt="Vinnusvæði fyrir skurð búinn til" height=auto width=auto>
+                     <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Myndir/S%C3%BDning.PNG"alt="Einingum raðað upp í vinnuramma" height=auto width=auto>
+                    <p>Þegar skráin var sett inn í forritið komu allar línurnar í sitthvoru lagi, þ.e. það var ekki hægt að færa einingu sem heild - aðeins eina línu í einu. Til þess að laga þetta þarf að “hópa” þeim saman. Það er gert með því að velja allar þær línur sem tilheyra hverri einingu, hægri smella og velja Hópa.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Group.png"alt="Línur hópaðar saman " height=auto width=auto>
+                        <p>Því næst dreg ég inn rákirnar sem eiga að vera á hjörunum, stilli þeim upp við útlínur umgjarðarinnar og hópa. Síðan bý ég til 3 önnur eintök og raða öllu snyrtilega innan rammans.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/R%C3%81KIR_fest.PNG"alt="Rákir settar á flöt" height=auto width=auto>
+                        <p>Nú þarf að ýta á Shift+Ctrl+F til að fá Fyllingar og útlínur flipann og fylgja eftirfarandi leiðbeiningum til þess að klára ferlið.</p>
+                        <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Fylling_utlina_1.PNG"alt="Stillingaratriði 1" height=auto width=auto>
+                         <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Fylling_utlina_2.PNG"alt="Stillingaratriði 2" height=auto width=auto>
+                          <img style="padding-bottom: 11.62px;" class="center" src="2d-prent/Fylling_utlina_3.PNG"alt="Stillingaratriði 3" height=auto width=auto>
+                        <p>Nú þarf að vista þessa skrá á SVG skráarforminu. <a href="2d-prent/2d-prent.svg" download>Hér má ná í SVG skrá verkefnisisns</a>. Eina sem er eftir er að skera út einingarnar!
+                        </p>
+                        <b>Síða með niðurstöðum skurðs og vínilskera verður uppfærð síðar.</b>
+                        
+                    
+                    </article>
+                    
+
+
+
+
+
+
+
+
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <section>
+                            <header>
+                                <h2>Alm. upplýsingar</h2>
+                            </header>
+
+
+                            <div class="col-4 col-12-medium">
+                                <ul class="contact">
+                                    <li>
+                                        <h3>Skóli</h3>
+                                        <p>
+                                            Háskóli Íslands
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>Tölvupóstur</h3>
+                                        <p><a href="mailto:ito2@hi.is">ito2@hi.is</a></p>
+                                    </li>
+                                </ul>
+
+                                <div class="col-4 col-12-medium">
+                                    <section>
+                                        <a href="#" class="image featured"><img src="/myndir/University%20of%20Iceland_hvitt.png" alt="" /></a>
+                                    </section>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </section>
+                        <div class="col-12">
+
+                            <!-- Copyright -->
+                            <div id="copyright">
+                                <ul class="links">
+                                    <li>&copy; Heimasíða Inga Þórs. All rights reserved.</li>
+                                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
